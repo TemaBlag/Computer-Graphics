@@ -21,10 +21,10 @@ This web application allows users to interactively select and manipulate colors,
 
 ## Color Models
 * **RGB (Red, Green, Blue)**:
-The RGB color model is an additive color model primarily used for displaying colors on digital screens. It works by combining different intensities of red, green, and blue light. Each color channel can have a value ranging from 0 to 255, allowing for over 16 million possible color combinations. When the values for all three channels are set to 0, the result is black, while setting them to their maximum (255, 255, 255) produces white. This model is widely used in web design, digital photography, and video.
+<p>The RGB color model is an additive color model primarily used for displaying colors on digital screens. It works by combining different intensities of red, green, and blue light. Each color channel can have a value ranging from 0 to 255, allowing for over 16 million possible color combinations. When the values for all three channels are set to 0, the result is black, while setting them to their maximum (255, 255, 255) produces white. This model is widely used in web design, digital photography, and video.
 
 * **HSV (Hue, Saturation, Value)**:
-The HSV color model represents colors in a way that is more intuitive for human perception. It consists of three components:
+<p>The HSV color model represents colors in a way that is more intuitive for human perception. It consists of three components:
 
 + **Hue**: Represents the color type and is measured as an angle (0° to 360°) on the color wheel (e.g., red at 0°, green at 120°, blue at 240°).
 + **Saturation**: Indicates the intensity or purity of the color, ranging from 0% (gray) to 100% (full color).
@@ -32,5 +32,5 @@ The HSV color model represents colors in a way that is more intuitive for human 
 This model is especially useful in graphic design and image editing, as it aligns better with how people perceive and manipulate colors.
 
 * **CMYK (Cyan, Magenta, Yellow, Black)**:
-The CMYK color model is a subtractive color model used primarily in color printing. It works by subtracting varying percentages of cyan, magenta, yellow, and black inks from a white background to produce different colors. The model is based on the CMY color model, with black (K) added to enhance depth and detail, as mixing CMY inks can produce unsatisfactory results. Each component can range from 0% to 100%, where 0% means no ink is used, and 100% indicates full saturation. This model is essential in the printing industry for producing high-quality color outputs.
+<p>The CMYK color model is a subtractive color model used primarily in color printing. It works by subtracting varying percentages of cyan, magenta, yellow, and black inks from a white background to produce different colors. The model is based on the CMY color model, with black (K) added to enhance depth and detail, as mixing CMY inks can produce unsatisfactory results. Each component can range from 0% to 100%, where 0% means no ink is used, and 100% indicates full saturation. This model is essential in the printing industry for producing high-quality color outputs.
 
