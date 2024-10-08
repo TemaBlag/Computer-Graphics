@@ -11,7 +11,7 @@ This web application allows users to interactively select and manipulate colors,
 
 ## How to Run
 * Clone the repository from GitHub: ```git clone https://github.com/yourusername/color-conversion-app.git```
-* Open the html file in your preferred web browser.
+* Open the ```color-converter.html``` file in your preferred web browser.
 
 ## Usage
 + **Input Fields**: You can manually enter values for the color components in each model (RGB, CMYK, or HSV).
