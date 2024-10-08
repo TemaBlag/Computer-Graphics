@@ -1,4 +1,6 @@
-**Color Model Conversion Web Application**
+# Color Model Conversion Web Application
+
+
 Overview
 This web application allows users to interactively select and manipulate colors, displaying their components in three different color models: CMYK, RGB, and HSV. The app updates the color values across all three models automatically whenever a color component is changed, ensuring consistency between representations.
 
