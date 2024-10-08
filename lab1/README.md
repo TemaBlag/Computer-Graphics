@@ -26,9 +26,9 @@ This web application allows users to interactively select and manipulate colors,
 * **HSV (Hue, Saturation, Value)**:  
   The HSV color model represents colors in a way that is more intuitive for human perception. It consists of three components:
   
-    - **Hue**: Represents the color type and is measured as an angle (0° to 360°) on the color wheel (e.g., red at 0°, green at 120°, blue at 240°).
-    - **Saturation**: Indicates the intensity or purity of the color, ranging from 0% (gray) to 100% (full color).
-    - **Value (Brightness)**: Refers to the brightness of the color, with 0% being completely dark and 100% being the brightest.  
+    * **Hue**: Represents the color type and is measured as an angle (0° to 360°) on the color wheel (e.g., red at 0°, green at 120°, blue at 240°).
+    * **Saturation**: Indicates the intensity or purity of the color, ranging from 0% (gray) to 100% (full color).
+    * **Value (Brightness)**: Refers to the brightness of the color, with 0% being completely dark and 100% being the brightest.  
       
   This model is especially useful in graphic design and image editing, as it aligns better with how people perceive and manipulate colors.
   
