@@ -30,6 +30,12 @@
             margin-bottom: 20px;
         }
 
+        .palette {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
         .names {
             display: flex;
             justify-content: center;
@@ -93,6 +99,8 @@
 
     <div class="container">
         <h1>Interactive Color Converter</h1>
+        
+        <h2 class="palette">Palette</h2>
 
         <div class="color-picker">
             <input type="color" id="colorPicker" oninput="handleColorPickerChange(this.value)">
@@ -375,10 +383,11 @@
         }
 
         function updateColorRGB() {
-            const r = document.getElementById("rgbRText").value; 
-            const g = document.getElementById("rgbGText").value; 
-            const b = document.getElementById("rgbBText").value; 
+            const r = checkInput(document.getElementById("rgbRText").value, 255); 
+            const g = checkInput(document.getElementById("rgbGText").value, 255); 
+            const b = checkInput(document.getElementById("rgbBText").value, 255);
             updateColorBox(r, g ,b);
+            updateRGB([r, g, b]);
             updateHSV(r, g, b);
             updateCMYK(r, g, b);
             updateColorPicker(rgbToHex(r, g, b));
@@ -388,13 +397,19 @@
         }
 
         function updateColorHSV() {
-            const h = document.getElementById("hueText").value; 
-            const s = document.getElementById("saturationText").value; 
-            const v = document.getElementById("valueText").value; 
+            const h = checkInput(document.getElementById("hueText").value, 360); 
+            const s = checkInput(document.getElementById("saturationText").value, 100); 
+            const v = checkInput(document.getElementById("valueText").value, 100); 
             const [r, g, b] = hsvToRgb(h, s, v);
             updateColorBox(r, g ,b);
-            updateCMYK([r, g, b]);
+            document.getElementById('hue').value = h;
+            document.getElementById('saturation').value = s;
+            document.getElementById('value').value = v;
+            document.getElementById('hueText').value = h;
+            document.getElementById('saturationText').value = s;
+            document.getElementById('valueText').value = v;
             updateRGB([r, g ,b]);
+            updateHSV(r, g ,b);
             updateColorPicker(rgbToHex(r, g, b));
             document.getElementById('hue').value = h;
             document.getElementById('saturation').value = s;
@@ -402,19 +417,50 @@
         }
 
         function updateColorCMYK() {
-            const c = document.getElementById("cyanText").value; 
-            const m = document.getElementById("magentaText").value; 
-            const y = document.getElementById("yellowText").value; 
-            const k = document.getElementById("blackText").value; 
+            const c = checkInput(document.getElementById("cyanText").value, 100); 
+            const m = checkInput(document.getElementById("magentaText").value, 100); 
+            const y = checkInput(document.getElementById("yellowText").value, 100); 
+            const k = checkInput(document.getElementById("blackText").value, 100); 
             const [r, g, b] = cmykToRgb(c, m, y, k);
             updateColorBox(r, g ,b);
-            updateHSV([r, g, b]);
+            updateHSV(r, g, b);
             updateRGB([r, g ,b]);
+            document.getElementById('cyan').value = c;
+            document.getElementById('magenta').value = m;
+            document.getElementById('yellow').value = y;
+            document.getElementById('black').value = k;
+            document.getElementById('cyanText').value = c;
+            document.getElementById('magentaText').value = m;
+            document.getElementById('yellowText').value = y;
+            document.getElementById('blackText').value = k;
             updateColorPicker(rgbToHex(r, g, b));
             document.getElementById('cyan').value = c;
             document.getElementById('magenta').value = m;
             document.getElementById('yellow').value = y;
             document.getElementById('black').value = k;
+        }
+
+        function checkInput(num, cat) {
+            if (!isNaN(Number(num))){
+                if (num < 0){
+                    alert("Number must be > 0");
+                    return '0'
+                }
+                if (cat == 255 && num > 255){
+                        alert("Number must be <= 255");
+                        return '0'
+                } else if (cat == 100 && num > 100){
+                        alert("Number must be <= 100"); 
+                        return '0'
+                } else if (cat == 360 && num > 360){
+                    alert("Number must be <= 360");
+                    return '0'
+                }
+                return num
+            } else{
+                alert("Input value must be a number");
+                return '0'
+            }  
         }
     </script>
 </body>
