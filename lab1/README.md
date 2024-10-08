@@ -21,7 +21,7 @@ This web application allows users to interactively select and manipulate colors,
 
 ## Color Models
 * **RGB (Red, Green, Blue)**:
-<p>The RGB color model is an additive color model primarily used for displaying colors on digital screens. It works by combining different intensities of red, green, and blue light. Each color channel can have a value ranging from 0 to 255, allowing for over 16 million possible color combinations. When the values for all three channels are set to 0, the result is black, while setting them to their maximum (255, 255, 255) produces white. This model is widely used in web design, digital photography, and video.
+  The RGB color model is an additive color model primarily used for displaying colors on digital screens. It works by combining different intensities of red, green, and blue light. Each color channel can have a value ranging from 0 to 255, allowing for over 16 million possible color combinations. When the values for all three channels are set to 0, the result is black, while setting them to their maximum (255, 255, 255) produces white. This model is widely used in web design, digital photography, and video.
 
 * **HSV (Hue, Saturation, Value)**:  
   The HSV color model represents colors in a way that is more intuitive for human perception. It consists of three components:
