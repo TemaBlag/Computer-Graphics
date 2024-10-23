@@ -91,8 +91,6 @@ Global thresholding is used for image segmentation, where pixels are transformed
 # Comparison: Simple Thresholding vs. Otsu's Method
 
 Simple Thresholding is the best for images with consistent backgrounds and clear object boundaries. So let's show it:
-<div style="display: flex; justify-content: space-around;">
-    <img src="/Users/user/Desktop/house.jpg" alt="Image 1" style="width: 30%;"/>
-    <img src="/Users/user/Desktop/house.jpg" alt="Image 2" style="width: 30%;"/>
-    <img src="/Users/user/Desktop/house.jpg" alt="Image 3" style="width: 30%;"/>
-</div>
+![house](https://github.com/user-attachments/assets/3ccd7535-2fb1-4898-8a76-f88850247dfd)
+![simple](https://github.com/user-attachments/assets/91213ea2-0b27-4db4-af61-2062c972a10d)
+![otsu](https://github.com/user-attachments/assets/7d5642c5-658c-4aed-9a4a-eeecd2e7fcb1)
