@@ -54,8 +54,6 @@ where $I_{\min}$ and $I_{\max}$ are the minimum and maximum intensity values res
 
 ## 3. Global Thresholding
 
-## 3. Global Thresholding
-### Description
 Global thresholding is used for image segmentation, where pixels are transformed into a binary image based on a given threshold.
 
 1. **Simple Thresholding**: Applying a fixed threshold \( T \), where all pixel values above the threshold become white (255), and below the threshold become black (0):
