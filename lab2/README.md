@@ -66,9 +66,9 @@ Global thresholding is used for image segmentation, where pixels are transformed
 
 1. **Piecemeal Operations**
 
-- **Image Enhancement**: Useful for improving local contrast or brightness in specific areas of an image.
-- **Selective Filtering**: When certain regions of an image require different processing.
-- **Custom Segmentation**: When specific features need to be isolated based on pixel value or neighborhood characteristics.
+  - **Image Enhancement**: Useful for improving local contrast or brightness in specific areas of an image.
+  - **Selective Filtering**: When certain regions of an image require different processing.
+  - **Custom Segmentation**: When specific features need to be isolated based on pixel value or neighborhood characteristics.
 
 2. **Linear Contrast Stretching**
 
