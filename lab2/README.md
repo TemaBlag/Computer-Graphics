@@ -39,20 +39,18 @@ This project implements an image processing application using various techniques
 Pixel-wise operations are performed on each pixel of the image independently. In this project, two pixel-wise operations are implemented:
 
 1. **Brightness Increase**: Adding a constant value to all pixels of the image, which increases the brightness.
-    - $I'(x, y) = I(x, y) + C$, where $ I(x, y)$ is the pixel intensity value, and $C$ is the added brightness.
+    - $I'(x, y) = I(x, y) + C$, where $I(x, y)$ is the pixel intensity value, and $C$ is the added brightness.
     
 2. **Color Inversion**: Inverting the intensity values of each pixel, resulting in a negative image.
-    -  \( I'(x, y) = 255 - I(x, y) \)
+    - $I'(x, y) = 255 - I(x, y)$
 
 ## 2. Linear Contrast Stretching
 
 Linear contrast stretching (contrast enhancement) is used to improve the image by transforming the brightness range of the image to span the entire possible range [0, 255].
 
 - The minimum and maximum intensity values of the original image are used for normalization:
-\[
-I'(x, y) = \frac{I(x, y) - I_{\min}}{I_{\max} - I_{\min}} \times 255
-\]
-where \( I_{\min} \) and \( I_{\max} \) are the minimum and maximum intensity values respectively.
+- $I'(x, y) = \frac{I(x, y) - I_{\min}}{I_{\max} - I_{\min}} \times 255$
+where $I_{\min}$ and $I_{\max}$ are the minimum and maximum intensity values respectively.
 
 ## 3. Global Thresholding
 
