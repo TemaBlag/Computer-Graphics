@@ -58,8 +58,10 @@ Global thresholding is used for image segmentation, where pixels are transformed
 
 1. **Simple Thresholding**: Applying a fixed threshold \( T \), where all pixel values above the threshold become white (255), and below the threshold become black (0):
 $I'(x, y) = \begin{cases} 255, & \text{if } I(x, y) \geq T \\0, & \text{if } I(x, y) < T\end{cases}$
+$I'(x, y) = 255 \, \text{if } I(x, y) \geq T, \, \text{else} \, 0$
 
-2. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
+
+3. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
     - The algorithm calculates the optimal threshold based on the intensity distribution of the pixels.
 
 ### Example
