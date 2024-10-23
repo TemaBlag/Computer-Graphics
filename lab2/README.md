@@ -39,7 +39,7 @@ This project implements an image processing application using various techniques
 Pixel-wise operations are performed on each pixel of the image independently. In this project, two pixel-wise operations are implemented:
 
 1. **Brightness Increase**: Adding a constant value to all pixels of the image, which increases the brightness.
-    - $\ I'(x, y) = I(x, y) + C \$, where \( I(x, y) \) is the pixel intensity value, and \( C \) is the added brightness.
+    - $\ I'(x, y) = I(x, y) + C \$, where $\ I(x, y) \$ is the pixel intensity value, and $\ C \$ and $C$ is the added brightness.
     
 2. **Color Inversion**: Inverting the intensity values of each pixel, resulting in a negative image.
     -  \( I'(x, y) = 255 - I(x, y) \)
