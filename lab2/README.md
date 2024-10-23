@@ -62,11 +62,3 @@ Global thresholding is used for image segmentation, where pixels are transformed
 
 2. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
     - The algorithm calculates the optimal threshold based on the intensity distribution of the pixels.
-
-### Example
-$T_{\text{Otsu}} = \arg\min_T \left( w_1(T) \sigma_1^2(T) + w_2(T) \sigma_2^2(T) \right)$
-where \( w_1 \) and \( w_2 \) are the proportions of pixels below and above the threshold, and \( \sigma_1^2 \) and \( \sigma_2^2 \) are the variances of intensities in these segments.
-
-## Comparison of Methods
-- **Linear contrast stretching** helps improve the visual perception of the image, especially if the image has low contrast.
-- **Global thresholding** works well for binarizing images, especially when dealing with clear objects on a uniform background.
