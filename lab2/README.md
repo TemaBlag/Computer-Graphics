@@ -56,22 +56,15 @@ where $I_{\min}$ and $I_{\max}$ are the minimum and maximum intensity values res
 
 Global thresholding is used for image segmentation, where pixels are transformed into a binary image based on a given threshold.
 
-1. **Simple Thresholding**: Applying a fixed threshold \( T \), where all pixel values above the threshold become white (255), and below the threshold become black (0):
-\[
-I'(x, y) = 
-\begin{cases} 
-255, & \text{if } I(x, y) \geq T \\
-0, & \text{if } I(x, y) < T
-\end{cases}
-\]
+1. **Simple Thresholding**: Applying a fixed threshold $T$, where all pixel values above the threshold become white (255), and below the threshold become black (0):
+2. 
+- $I'(x, y) = 255$ if $I(x, y) \geq T$, otherwise $I'(x, y) = 0$
 
 2. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
     - The algorithm calculates the optimal threshold based on the intensity distribution of the pixels.
 
 ### Example
-\[
-T_{\text{Otsu}} = \arg\min_T \left( w_1(T) \sigma_1^2(T) + w_2(T) \sigma_2^2(T) \right)
-\]
+$T_{\text{Otsu}} = \arg\min_T \left( w_1(T) \sigma_1^2(T) + w_2(T) \sigma_2^2(T) \right)$
 where \( w_1 \) and \( w_2 \) are the proportions of pixels below and above the threshold, and \( \sigma_1^2 \) and \( \sigma_2^2 \) are the variances of intensities in these segments.
 
 ## Comparison of Methods
