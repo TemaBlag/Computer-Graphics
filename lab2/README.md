@@ -87,3 +87,12 @@ Global thresholding is used for image segmentation, where pixels are transformed
 - **Dynamic Range Images**: Ideal for images where the foreground and background have distinct intensity distributions but no predetermined threshold is available.
 - **Complex Images**: Effective in scenarios with varying lighting conditions, shadows, or where the foreground and background are not easily separable.
 - **Biological Imaging**: Commonly used in medical and biological image analysis to differentiate between cells and background in microscopy images.
+
+# Comparison: Simple Thresholding vs. Otsu's Method
+
+Simple Thresholding is the best for images with consistent backgrounds and clear object boundaries. So let's show it:
+<div style="display: flex; justify-content: space-around;">
+    <img src="/Users/user/Desktop/house.jpg" alt="Image 1" style="width: 30%;"/>
+    <img src="/Users/user/Desktop/house.jpg" alt="Image 2" style="width: 30%;"/>
+    <img src="/Users/user/Desktop/house.jpg" alt="Image 3" style="width: 30%;"/>
+</div>
