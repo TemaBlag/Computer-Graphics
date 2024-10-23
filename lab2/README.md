@@ -59,5 +59,31 @@ Global thresholding is used for image segmentation, where pixels are transformed
 1. **Simple Thresholding**: Applying a fixed threshold $T$, where all pixel values above the threshold become white (255), and below the threshold become black (0):
   $I'(x, y) = 255$ if $I(x, y) \geq T$, otherwise $I'(x, y) = 0$
 
-3. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
+2. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
     - The algorithm calculates the optimal threshold based on the intensity distribution of the pixels.
+
+# Use Cases:
+
+1. **Piecemeal Operations**
+
+- **Image Enhancement**: Useful for improving local contrast or brightness in specific areas of an image.
+- **Selective Filtering**: When certain regions of an image require different processing.
+- **Custom Segmentation**: When specific features need to be isolated based on pixel value or neighborhood characteristics.
+
+2. **Linear Contrast Stretching**
+
+- **Low-Contrast Images**: Best suited for images where the intensity values are clustered in a narrow range.
+- **Preprocessing for Analysis**: Useful before applying other image analysis techniques, such as segmentation or feature extraction, to ensure that details are more visible.
+- **Medical Imaging**: Common in enhancing features in X-rays, MRIs, or other medical scans.
+  
+3. **Simple Thresholding**
+
+- **Basic Segmentation**: Effective for applications where the foreground and background can be easily distinguished by intensity.
+- **Image Binarization**: Useful in document processing, where text can be separated from the background.
+- **Real-Time Applications**: Suitable for applications requiring fast processing and less computational complexity.
+  
+4. **Otsu’s Method**
+
+- **Dynamic Range Images**: Ideal for images where the foreground and background have distinct intensity distributions but no predetermined threshold is available.
+- **Complex Images**: Effective in scenarios with varying lighting conditions, shadows, or where the foreground and background are not easily separable.
+- **Biological Imaging**: Commonly used in medical and biological image analysis to differentiate between cells and background in microscopy images.
