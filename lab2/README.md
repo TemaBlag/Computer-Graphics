@@ -64,7 +64,6 @@ I'(x, y) =
 0, & \text{if } I(x, y) < T
 \end{cases}
 \]
-$I'(x, y) = 255 \, \text{if } I(x, y) \geq T, \, \text{else} \, 0$
 
 
 3. **Otsu's Method**: An automatic threshold selection method that minimizes the intra-class variance (differences within each segment of the image).
