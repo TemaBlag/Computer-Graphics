@@ -1,4 +1,4 @@
-# Documentation for `PixelPath`
+# PixelPath
 
 The `PixelPath` class provides a graphical interface using `Tkinter` to demonstrate rasterization algorithms, including line and circle rendering methods such as Step-by-Step, DDA, Bresenham, Castle-Pitway, and Bresenham's circle algorithm. The app allows users to enter coordinates and parameters to draw shapes step-by-step.
 
