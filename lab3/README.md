@@ -118,10 +118,10 @@ The **Castle-Pitway** algorithm is another incremental line-drawing approach, of
 
 ## Rendering time
 Line from (0, 0) to (300, 300):
-- Step-by-step: 0.0021 sec
-- DDA:0.0031 sec
-- Bresenham line: 0.0017 sec
-- Castle-Pitway Algorithm: 0.0018 sec
+- Step-by-step: 0.0432 sec
+- DDA:0.0506 sec
+- Bresenham line: 0.0102 sec
+- Castle-Pitway Algorithm: 0.0001 sec
   
 Circle in $O$(0, 0) and R=150:
-- Bresenham circle: 0.0041 sec
+- Bresenham circle: 0.0017 sec
