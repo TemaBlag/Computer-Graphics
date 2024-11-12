@@ -14,6 +14,9 @@
 
 ## How to Run
 
+### macOS
+You can download exe file and run it.
+
 ### Prerequisites
 
 - Python 3.x
