@@ -14,6 +14,16 @@ The `PixelPath` class provides a graphical interface using `Tkinter` to demonstr
 ### macOS
 You can download exe file and run it.
 
+### Prerequisites
+
+- Python 3.x
+- Required Python packages(Tkinter, NumPy)
+  
+### Running the Application
+1. Clone the repository
+2. Run the script in you IDE
+3. The graphical interface will open, allowing you to paint lines
+
 ## Theory
 
 ### 1. Step-by-Step
