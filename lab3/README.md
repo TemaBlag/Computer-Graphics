@@ -9,6 +9,11 @@ The `PixelPath` class provides a graphical interface using `Tkinter` to demonstr
 - **Castle-Pitway Line**
 - **Bresenham’s Circle**
 
+# How to run
+
+### macOS
+You can download exe file and run it.
+
 ## Theory
 
 ### 1. Step-by-Step
